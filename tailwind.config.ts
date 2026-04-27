@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        caramel: "var(--color-caramel)",
+        "caramel-light": "var(--color-caramel-light)",
+        chocolate: "#6e393f",
+        "chocolate-dark": "var(--color-chocolate-dark)",
+        cream: "var(--color-cream)",
+        beige: "var(--color-beige)",
       },
     },
   },
