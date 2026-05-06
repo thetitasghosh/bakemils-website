@@ -87,7 +87,7 @@ export default function Products() {
           </div>
 
           {/* View Toggle Button - Positioned in the upper right of the container */}
-          <div className="absolute top-0 right-0">
+          <div className="absolute md:top-0 md:right-0 -top-16 right-0 ">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -121,7 +121,7 @@ export default function Products() {
               exit={{ opacity: 0, scale: 0.98 }}
               className="relative group"
             >
-              <div className="overflow-hidden rounded-[40px] shadow-2xl aspect-[21/9] relative">
+              <div className="overflow-hidden rounded-[40px] shadow-2xl md:aspect-[21/9] aspect-square redd relative">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={currentIndex}

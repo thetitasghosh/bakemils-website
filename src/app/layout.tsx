@@ -19,7 +19,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  // metadataBase: new URL("https://yourdomain.com"), // ⚠️ replace
+  metadataBase: new URL("https://bakemils-website.vercel.app/"), // ⚠️ replace
 
   title: {
     default: "Bakemills | Premium Bakery & Handmade Desserts",

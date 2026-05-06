@@ -111,7 +111,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
             />
           </div>
 
-          <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col max-h-[90vh] overflow-y-auto">
+          <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col md:max-h-[90vh] h-96 overflow-y-auto">
             <div className="flex items-center justify-between mb-2">
               <span className="text-caramel font-bold uppercase tracking-widest text-xs">
                 {product.category}

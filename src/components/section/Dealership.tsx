@@ -64,12 +64,12 @@ export default function Dealership() {
           </a>
         </motion.div>
 
-        <div className="grid grid-cols-2 gap-4">
+        <div className="flex flex-col md:flex-row items-start justify-center gap-4 red">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-4"
+            className="space-y-4 redd"
           >
             <div className="bg-white/5 backdrop-blur-lg p-8 rounded-[40px] border border-white/10 flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-caramel/20 rounded-2xl flex items-center justify-center mb-6">
@@ -96,7 +96,7 @@ export default function Dealership() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="space-y-4 mt-12"
+            className="space-y-4  redd"
           >
             <div className="bg-white/5 backdrop-blur-lg p-8 rounded-[40px] border border-white/10 flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-caramel/20 rounded-2xl flex items-center justify-center mb-6">

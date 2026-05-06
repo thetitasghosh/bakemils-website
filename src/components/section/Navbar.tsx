@@ -5,6 +5,7 @@ import { Menu, X } from "lucide-react";
 // import { Link, useLocation } from "react-router-dom";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 
 const navLinks = [
   { name: "HOME", href: "/#home" },
@@ -47,15 +48,22 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${isScrolled || path !== "/" ? "bg-white/80 backdrop-blur-lg shadow-lg py-3" : "bg-transparent"}`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <div className="max-w-7xl mx-auto flex items-center justify-between redd">
         <Link href="/">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex items-center gap-2"
+            className="flex items-center "
           >
-            <span className="text-3xl font-display font-black text-chocolate tracking-tighter lowercase">
-              bake<span className="text-caramel">mills</span>
+            <Image
+              src="/logo-with-white-stroke.png"
+              alt="Bakemills Logo"
+              width={100}
+              height={100}
+              className="object-contain reds size-20"
+            />
+            <span className="text-3xl font-display font-black text-chocolate tracking-tighter ">
+              Bake<span className="text-caramel">mills</span>
             </span>
           </motion.div>
         </Link>

@@ -82,8 +82,8 @@ export default function CollectionProductPage() {
       </section>
 
       {/* TOOLBAR */}
-      <section className="sticky top-20 z-40 bg-cream/80 backdrop-blur border-b border-beige/20 px-6 py-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6 justify-between items-center">
+      <section className="sticky top-0 z-40 bg-cream/80 backdrop-blur border-b border-beige/20 px-6 py-6">
+        <div className="max-w-7xl mx-auto flex  md:flex-row gap-4 justify-between items-center">
           <div className="relative w-full md:w-96">
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-chocolate/40" />
             <input
@@ -100,7 +100,7 @@ export default function CollectionProductPage() {
             onChange={(e) =>
               setSortBy(e.target.value as "newest" | "price-low" | "price-high")
             }
-            className="px-4 py-3 border rounded-2xl"
+            className=" py-3 border rounded-2xl"
           >
             <option value="newest">Newest</option>
             <option value="price-low">Low → High</option>
