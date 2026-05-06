@@ -10,6 +10,7 @@ import ThreeScene from "@/components/section/ThreeScene";
 // import CustomCursor from "@/components/section/CustomCursor";
 // import CollectionPage from "@/components/section/CollectionPage";
 import ScrollToTop from "@/components/section/ScrollToTop";
+import Image from "next/image";
 
 function HomePage() {
   return (
@@ -44,10 +45,14 @@ export default function App() {
         <footer className="py-12 px-6 bg-white border-t border-beige/20">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-chocolate rounded-lg flex items-center justify-center">
-                <span className="text-cream font-display font-black text-sm">
-                  B
-                </span>
+              <div className="size-16 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/logo-with-white-stroke.png"
+                  alt="Bakemills Logo"
+                  width={100}
+                  height={100}
+                  className="object-contain reds "
+                />
               </div>
               <span className="text-xl font-display font-black text-chocolate tracking-tighter">
                 BAKEMILLS
